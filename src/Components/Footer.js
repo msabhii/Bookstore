@@ -55,7 +55,7 @@ function Footer() {
           <div className="flex place-content-center">
             <h1>
               © 2023 Made with Knowledge and Love By{" "}
-              <span className="font-normal hover:font-bold">MS Abhi</span>
+              <span className="font-normal hover:font-bold"> MS Abhi</span>
             </h1>
           </div>
         </div>
