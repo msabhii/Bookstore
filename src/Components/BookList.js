@@ -1,14 +1,14 @@
 import BookShow from "./BookShow";
-import image_404 from "../images/cover_not_found.jpg";
+import image_404 from "../images/404.gif";
 
 function BookList({ books }) {
-  if (!books || books.length === 0) {
+  if (!books) {
     return (
       <div className="flex place-content-center">
-        <img src={image_404} alt="404" className="w-64" />
+        <img src={image_404} alt="404" width="" />
       </div>
     );
-  }
+  } //!
   const BookstoShow = books.map((book) => {
     return (
       <div>
