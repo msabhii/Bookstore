@@ -56,11 +56,15 @@ function BookShow({ book }) {
             <p>Buy this Book: </p>
           </div>
           <div>
-            <button className={buttonStyle}>
-              <a href={book.saleInfo.buyLink} target="blank">
-                Buy Book
-              </a>
-            </button>
+            {book.saleInfo.buyLink ? (
+              <button className={buttonStyle}>
+                <a href={book.saleInfo.buyLink} target="blank">
+                  Buy Book
+                </a>
+              </button>
+            ) : (
+              <p className="text-red-900 font-semibold">No  Purchase Available</p>
+            )}
           </div>
           <div className="text-red-600 text-2xl ">
             <div className="ml-60  absolute right-6 mr-8 ">
